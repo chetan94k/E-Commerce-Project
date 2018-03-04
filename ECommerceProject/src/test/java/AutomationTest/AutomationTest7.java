@@ -87,6 +87,7 @@ public void AT7() throws IOException, Exception
     
 	//returning back from pop up window
 	driver.switchTo().window(parent);
+	//
 }
 
 @AfterMethod
