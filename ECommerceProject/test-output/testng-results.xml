@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="31033" started-at="2018-02-24T17:47:52Z" finished-at="2018-02-24T17:48:23Z">
+  <suite name="Default suite" duration-ms="40686" started-at="2018-03-04T13:12:33Z" finished-at="2018-03-04T13:13:13Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="31033" started-at="2018-02-24T17:47:52Z" finished-at="2018-02-24T17:48:23Z">
-      <class name="AutomationTest.AutomationTest6">
-        <test-method status="PASS" signature="BeforeAT6()[pri:0, instance:AutomationTest.AutomationTest6@d25987]" name="BeforeAT6" is-config="true" duration-ms="16" started-at="2018-02-24T23:17:52Z" finished-at="2018-02-24T23:17:52Z">
+    <test name="Default test" duration-ms="40686" started-at="2018-03-04T13:12:33Z" finished-at="2018-03-04T13:13:13Z">
+      <class name="AutomationTest.AutomationTest7">
+        <test-method status="PASS" signature="BeforeAT7()[pri:0, instance:AutomationTest.AutomationTest7@d25987]" name="BeforeAT7" is-config="true" duration-ms="16" started-at="2018-03-04T18:42:33Z" finished-at="2018-03-04T18:42:33Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BeforeAT6 -->
-        <test-method status="PASS" signature="AT6()[pri:0, instance:AutomationTest.AutomationTest6@d25987]" name="AT6" duration-ms="30971" started-at="2018-02-24T23:17:52Z" finished-at="2018-02-24T23:18:23Z">
+        </test-method> <!-- BeforeAT7 -->
+        <test-method status="PASS" signature="AT7()[pri:0, instance:AutomationTest.AutomationTest7@d25987]" name="AT7" duration-ms="40530" started-at="2018-03-04T18:42:33Z" finished-at="2018-03-04T18:43:13Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AT6 -->
-        <test-method status="PASS" signature="AfterAT6()[pri:0, instance:AutomationTest.AutomationTest6@d25987]" name="AfterAT6" is-config="true" duration-ms="0" started-at="2018-02-24T23:18:23Z" finished-at="2018-02-24T23:18:23Z">
+        </test-method> <!-- AT7 -->
+        <test-method status="PASS" signature="AfterAT7()[pri:0, instance:AutomationTest.AutomationTest7@d25987]" name="AfterAT7" is-config="true" duration-ms="78" started-at="2018-03-04T18:43:13Z" finished-at="2018-03-04T18:43:13Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AfterAT6 -->
-      </class> <!-- AutomationTest.AutomationTest6 -->
+        </test-method> <!-- AfterAT7 -->
+      </class> <!-- AutomationTest.AutomationTest7 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

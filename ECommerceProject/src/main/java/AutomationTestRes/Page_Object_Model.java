@@ -28,7 +28,11 @@ By getsonycompare =By.xpath("//*[@id='top']/body/div[1]/div/div[2]/div/div[2]/di
 By getiphonecompare =By.xpath("//*[@id='top']/body/div[1]/div/div[2]/div/div[2]/div[1]/div[3]/ul/li[2]/div/div[3]/ul/li[2]/a");
 By getcompare =By.xpath("//button[@title='Compare']");
 By closecompare =By.xpath("//*[@id='top']/body/div[1]/div[2]/button");
-
+By getsonytext =By.xpath("//*[@id='top']/body/div[1]/div/div[2]/div/div[2]/div[1]/div[3]/ul/li[1]/div/h2/a");
+By getiphonetext =By.xpath("//*[@id='top']/body/div[1]/div/div[2]/div/div[2]/div[1]/div[3]/ul/li[2]/div/h2/a");
+By getsonytext1 =By.xpath("//*[@id='product_comparison']/tbody[1]/tr[1]/td[1]/h2/a");
+By getiphonetext1 =By.xpath("//*[@id='product_comparison']/tbody[1]/tr[1]/td[2]/h2/a");
+By getheading =By.xpath("//*[@id='top']/body/div[1]/div[1]/h1");
 
 public WebElement getmobile()
 {
@@ -82,5 +86,26 @@ public WebElement closecompare()
 {
   return driver.findElement(closecompare);	
 }
+public WebElement getsonytext()
+{
+  return driver.findElement(getsonytext);	
+}
+public WebElement getiphonetext()
+{
+  return driver.findElement(getiphonetext);	
+}
+public WebElement getsonytext1()
+{
+  return driver.findElement(getsonytext1);	
+}
+public WebElement getiphonetext1()
+{
+  return driver.findElement(getiphonetext1);	
+}
+public WebElement getheading()
+{
+  return driver.findElement(getheading);	
+}
+
 
 }

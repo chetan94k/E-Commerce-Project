@@ -21,7 +21,7 @@ String geturl;
 	
 public WebDriver Driver_Initialisation() throws IOException
 {
-    FileInputStream fis=new FileInputStream("C:\\Users\\chetan\\ECommerceProject\\src\\main\\java\\AutomationTestRes\\Resources.properties");
+    FileInputStream fis=new FileInputStream("C:\\Users\\chetan\\git\\E-Commerce-Project\\ECommerceProject\\src\\main\\java\\AutomationTestRes\\Resources.properties");
 	Properties prop=new Properties();
 	prop.load(fis);
     if(prop.getProperty("browser").equalsIgnoreCase("firefox"))

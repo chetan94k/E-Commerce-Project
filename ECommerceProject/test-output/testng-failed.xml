@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="AutomationTest.AutomationTest6">
+      <class name="AutomationTest.AutomationTest7">
         <methods>
-          <include name="AT6"/>
-          <include name="AfterAT6"/>
+          <include name="AT7"/>
           <include name="BeforeAT6"/>
+          <include name="AfterAT6"/>
         </methods>
-      </class> <!-- AutomationTest.AutomationTest6 -->
+      </class> <!-- AutomationTest.AutomationTest7 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
