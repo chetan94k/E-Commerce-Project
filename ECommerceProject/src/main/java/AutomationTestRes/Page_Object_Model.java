@@ -10,6 +10,7 @@ import org.openqa.selenium.WebElement;
 public class Page_Object_Model
 {
 WebDriver driver;
+
 public Page_Object_Model(WebDriver driver)
 {
 	this.driver=driver;
@@ -106,6 +107,7 @@ public WebElement getheading()
 {
   return driver.findElement(getheading);	
 }
+
 
 
 }

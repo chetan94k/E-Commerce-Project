@@ -35,7 +35,7 @@ public void BeforeAT8() throws IOException
 @Test
 public void AT8() throws IOException, Exception 
 {
-	String firstname="Chetan3";
+	String firstname="Chetan14";
 	String lastname="Sharma";
 	//creating object of page_object_model class and passing driver as parameter
 	AccountCreation a=new AccountCreation(driver);
@@ -49,7 +49,7 @@ public void AT8() throws IOException, Exception
     a.getfirstname().sendKeys(firstname);
     a.getmiddlename().sendKeys("Kumar");
     a.getlastname().sendKeys(lastname);
-    a.getemail().sendKeys("chetanbc2@gmail.com");
+    a.getemail().sendKeys("chetanbc14@gmail.com");
     a.getpwd().sendKeys("happfaces");
     a.confirmpwd().sendKeys("happfaces");
     a.register().click();
@@ -83,7 +83,7 @@ public void AT8() throws IOException, Exception
 public void AfterAT8()
 {
 	//closing the web browser
-	//driver.close();
+	driver.close();
 }
 
 }
