@@ -9,14 +9,16 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">25,705</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">38,710</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">AutomationTest.AutomationTest9</td><td><a href="#m0">AT8</a></td><td rowspan="1">1521264092655</td><td rowspan="1">12632</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">AutomationTest.AutomationTest10</td><td><a href="#m0">AT8</a></td><td rowspan="1">1521272113356</td><td rowspan="1">10255</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">AutomationTest.AutomationTest9#AT8</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
-	expected [YOUR ORDER HAS BEEN RECEIVED] but found [CHECKOUT]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at AutomationTest.AutomationTest9.AT8(AutomationTest9.java:105)
+<h2>Default test</h2><h3 id="m0">AutomationTest.AutomationTest10#AT8</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NumberFormatException: For input string: &quot;6,150.00&quot;
+	at sun.misc.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2043)
+	at sun.misc.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.lang.Double.parseDouble(Double.java:538)
+	at AutomationTestRes.AccountCreation.coversion(AccountCreation.java:255)
+	at AutomationTest.AutomationTest10.AT8(AutomationTest10.java:66)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

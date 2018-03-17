@@ -53,6 +53,12 @@ By confirmationmessage=By.xpath("//*[@id='top']/body/div[1]/div/div[2]/div/div/d
 By getorderid=By.xpath("//*[@id='top']/body/div[1]/div/div[2]/div/div/p[1]/a");
 By getbaseprice =By.xpath("//*[@id='product-price-4']");
 By gettotalprice=By.xpath("//*[@id='checkout-review-table']/tfoot/tr[3]/td[2]/strong/span");
+By getreorder =By.linkText("Reorder");
+By getedit=By.xpath("//*[@id='shopping-cart-table']/tbody/tr/td[4]/ul/li[1]/a");
+By getqty =By.xpath("//*[@id='qty']");
+By updatecart=By.xpath("//button[@title='Update Cart']");
+By price1=By.xpath("//*[@id='shopping-cart-table']/tbody/tr/td[3]/span/span");
+By getsubtotal=By.xpath("//*[@id='shopping-cart-table']/tbody/tr/td[5]/span/span");
 public WebElement getaccount()
 {
 return driver.findElement(getaccount);	
@@ -206,15 +212,40 @@ public WebElement gettotalprice()
 return driver.findElement(gettotalprice);	
 }
 
+public WebElement getreorder()
+{
+return driver.findElement(getreorder);	
+}
+public WebElement getedit()
+{
+return driver.findElement(getedit);	
+}
+public WebElement getqty()
+{
+return driver.findElement(getqty);	
+}
+public WebElement updatecart()
+{
+return driver.findElement(updatecart);	
+}
+public WebElement price1()
+{
+return driver.findElement(price1);	
+}
+public WebElement getsubtotal()
+{
+return driver.findElement(getsubtotal);	
+}
+
 
 public  Double coversion(String s)
 {
 	price="";
 	int size=s.length();
-	for(int i=1;i<size;i++)
+	for(int i=0;i<size;i++)
     {
 		String l=Character.toString(s.charAt(i));
-    	if(s.equalsIgnoreCase("$"))
+    	if(l.equalsIgnoreCase("$")||l.equalsIgnoreCase(","))
     	{
     		continue;
     	}

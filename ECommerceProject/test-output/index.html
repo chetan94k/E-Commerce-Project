@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\chetan\AppData\Local\Temp\testng-eclipse-1078203154\testng-customsuite.xml</span>
+                    <span>C:\Users\chetan\AppData\Local\Temp\testng-eclipse--454469616\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="AutomationTest.AutomationTest9" hash-for-method="AT8">AT8</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="AutomationTest.AutomationTest10" hash-for-method="AT8">AT8</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -120,7 +120,7 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">AutomationTest.AutomationTest9</span>
+              <span class="class-name">AutomationTest.AutomationTest10</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -128,10 +128,12 @@
                   <a name="AT8">
                   </a> <!-- AT8 -->
                   <span class="method-name">AT8</span>
-                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
-	expected [YOUR ORDER HAS BEEN RECEIVED] but found [CHECKOUT]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at AutomationTest.AutomationTest9.AT8(AutomationTest9.java:105)
+                  <div class="stack-trace">java.lang.NumberFormatException: For input string: &quot;6,150.00&quot;
+	at sun.misc.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2043)
+	at sun.misc.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.lang.Double.parseDouble(Double.java:538)
+	at AutomationTestRes.AccountCreation.coversion(AccountCreation.java:255)
+	at AutomationTest.AutomationTest10.AT8(AutomationTest10.java:66)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -166,7 +168,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\chetan\AppData\Local\Temp\testng-eclipse-1078203154\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\chetan\AppData\Local\Temp\testng-eclipse--454469616\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -175,7 +177,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;AutomationTest.AutomationTest9&quot;/&gt;
+      &lt;class name=&quot;AutomationTest.AutomationTest10&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -218,13 +220,13 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'AT8')
-data.setCell(0, 2, 'AutomationTest.AutomationTest9')
-data.setCell(0, 3, 12632);
+data.setCell(0, 2, 'AutomationTest.AutomationTest10')
+data.setCell(0, 3, 10255);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -250,7 +252,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">AutomationTest.AutomationTest9</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">AutomationTest.AutomationTest10</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">BeforeAT8</span>
                 <span class="method-start">0 ms</span>
@@ -259,11 +261,11 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">AT8</span>
-                <span class="method-start">12932 ms</span>
+                <span class="method-start">28299 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">AfterAT8</span>
-                <span class="method-start">25564 ms</span>
+                <span class="method-start">38554 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
