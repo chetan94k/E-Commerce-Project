@@ -206,6 +206,7 @@ public WebElement gettotalprice()
 return driver.findElement(gettotalprice);	
 }
 
+
 public  Double coversion(String s)
 {
 	price="";

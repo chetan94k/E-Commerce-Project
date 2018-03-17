@@ -58,6 +58,7 @@ public void AT8() throws IOException, Exception
      //getting price of product
      String baseprice=a.getbaseprice().getText();
      a.addtocart().click();
+     
      a.getcheckout().click();
 
     //Filling shipping details
@@ -76,8 +77,9 @@ public void AT8() throws IOException, Exception
      a.getcontinue().click();
      
      //Verifying shipping cost
+     String shippingcost=a.getshippingcost().getText();
      SoftAssert soft=new SoftAssert();
-     soft.assertEquals(a.getshippingcost().getText(),"$5.00");
+     soft.assertEquals(shippingcost,"$5.00");
      
      a.getcontinue1().click();
      
@@ -85,7 +87,7 @@ public void AT8() throws IOException, Exception
      
      a.getcontinue2().click();
      
-     double totalprice=a.coversion(a.getshippingcost().getText()) + a.coversion(a.getbaseprice().getText());
+     double totalprice=a.coversion(shippingcost) + a.coversion(baseprice);
      String totalprice1=String.valueOf(totalprice);
 	 String totalprice2="$"+totalprice1+"0";
 	 System.out.println(totalprice2);
