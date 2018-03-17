@@ -37,28 +37,31 @@ public void BeforeAT8() throws IOException
 @Test
 public void AT8() throws IOException, Exception 
 {
-	//creating object of page_object_model class and passing driver as parameter
 	driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	
+	//creating object of page_object_model class and passing driver as parameter
 	AccountCreation a=new AccountCreation(driver);
 	 
 	//clicking "My account" link 
 	 a.getaccount().click();
 	
 	//Login 
-    a.signinemail().clear();
+     a.signinemail().clear();
 	 a.signinemail().sendKeys("chetanbc14@gmail.com");
-    a.signinpwd().clear();
+     a.signinpwd().clear();
 	 a.signinpwd().sendKeys("happfaces");
-    a.getlogin().click();
+     a.getlogin().click();
     
     
     //clicking the wishlist,adding product to cart and checkout
      a.getmywishlist().click();
+    
      //getting price of product
      String baseprice=a.getbaseprice().getText();
+     
      a.addtocart().click();
      
+     //clicking checkout 
      a.getcheckout().click();
 
     //Filling shipping details
@@ -92,20 +95,14 @@ public void AT8() throws IOException, Exception
 	 String totalprice2="$"+totalprice1+"0";
 	 System.out.println(totalprice2);
 	 
-	//verifying the total price of the product
+	//verifying the total price of the product that shipping cost is added to product price
 	 soft.assertEquals(a.gettotalprice().getText(), totalprice2);
-     
      
      a.orderplaced().click();
      
-     soft.assertEquals(a.confirmationmessage().getText(),"YOUR ORDER HAS BEEN RECEIVED");
-     
+     //printing the generated id
      System.out.println("Your order id is:"+a.getorderid().getText());
-     
      soft.assertAll();
-     
-     
-     
      
 }
 
