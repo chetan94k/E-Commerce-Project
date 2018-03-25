@@ -18,11 +18,18 @@ public void BeforeAT1()
 	driver=null;
 	 
 }
+
+//Test case to verify the title
 @Test
 public void AT1() throws IOException 
 {
+	// driver initialisation
 	driver=Driver_Initialisation();
+	
+	//getting title of the webpage
 	String Hometitle=driver.getTitle();
+	
+	//Verifying the title
 	Assert.assertEquals(Hometitle,"THIS IS DEMO SITE");
 }
 @AfterMethod

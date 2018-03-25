@@ -22,6 +22,42 @@
       <class name="AutomationTest.AutomationTest3"/>
     </classes>
   </test> 
-   
+ <test name="Test4">
+  
+    <classes>
+      <class name="AutomationTest.AutomationTest3"/>
+    </classes>
+  </test> 
+  <test name="Test5">
+  
+    <classes>
+      <class name="AutomationTest.AutomationTest3"/>
+    </classes>
+  </test> 
+  <test name="Test6">
+  
+    <classes>
+      <class name="AutomationTest.AutomationTest3"/>
+    </classes>
+  </test> 
+  <test name="Test7">
+  
+    <classes>
+      <class name="AutomationTest.AutomationTest3"/>
+    </classes>
+  </test> 
+  <test name="Test8">
+  
+    <classes>
+      <class name="AutomationTest.AutomationTest3"/>
+    </classes>
+  </test> 
+  <test name="Test9">
+  
+    <classes>
+      <class name="AutomationTest.AutomationTest3"/>
+    </classes>
+  </test> 
+    
   <!-- Test -->
 </suite> <!-- Suite -->

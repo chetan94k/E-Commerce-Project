@@ -21,15 +21,20 @@ public void BeforeAT2()
 	driver=null;
 	 
 }
-
+// Test to verify the title
 @Test
 public void AT2() throws IOException 
 {
+	//driver initialisation
 	driver=Driver_Initialisation();
 	Page_Object_Model o=new Page_Object_Model(driver);
 	o.getmobile().click();
+	
+	//Wait has been added
 	driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
-    String title1=driver.getTitle();
+    
+	//fetching and verifying the title
+	String title1=driver.getTitle();
 	Assert.assertEquals(title1, "Mobile");
 }
 

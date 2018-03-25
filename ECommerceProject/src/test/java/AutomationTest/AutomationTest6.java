@@ -35,6 +35,7 @@ public void BeforeAT6()
 @Test
 public void AT6() throws IOException, Exception 
 {
+	// driver initialisation
 	driver=Driver_Initialisation();
 	Base_Initialisation b=new Base_Initialisation();
 	Page_Object_Model o=new Page_Object_Model(driver);
@@ -43,14 +44,24 @@ public void AT6() throws IOException, Exception
 	o.getsonycompare().click();
 	o.getiphonecompare().click();
 	o.getcompare().click();
-    Set<String> s=driver.getWindowHandles();
+    
+	// fetching window handles
+	Set<String> s=driver.getWindowHandles();
 	Iterator<String> i=s.iterator();
 	String parent=i.next();
 	String child=i.next();
+	
+	// switching to another window
 	driver.switchTo().window(child);
-    driver.manage().window().maximize();
+    
+	// Maximizing the window
+	driver.manage().window().maximize();
+    
+    //Excplicit wit has been added
     WebDriverWait d=new WebDriverWait(driver,30);
     d.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='top']/body/div[1]/div[2]/button")));
+    
+    //getting screenshot
     b.getScreenshot("popup");
     o.closecompare().click();
     
